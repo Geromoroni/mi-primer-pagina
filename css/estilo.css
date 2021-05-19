@@ -13,9 +13,25 @@ body {
 
 /**aca va media para moto g4*/
 @media screen and (max-width: 360px) {
+  .carousel img {
+    height: 300px; }
+  figure {
+    padding-top: 25px;
+    padding-bottom: 10px;
+    max-height: 480px;
+    max-width: 395px; }
+  .camisas {
+    padding-top: 10px;
+    margin-right: 50px;
+    margin-left: -50px; }
+  .jeans {
+    padding-top: 10px;
+    margin-right: 50px;
+    margin-left: -50px; }
   .row {
-    margin-right: 85px; } }
+    margin-left: -90px; } }
 
+/*aca va media para ipad*/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .row {
     margin-left: -50px; }
@@ -30,8 +46,18 @@ body {
     margin-right: 90px;
     font-size: 50px; } }
 
+/*Adap*/
 /**aca va media para iphone 6/7/8*/
 @media screen and (min-width: 361px) and (max-width: 768px) {
+  figure {
+    max-height: 480px;
+    max-width: 410px; }
+  .contenedor figure:hover > .capa {
+    opacity: 1;
+    visibility: visible; }
+  .contenedor {
+    width: 100%;
+    justify-content: right; }
   .camisas {
     margin-left: -6rem;
     padding-top: 10px; }
@@ -129,7 +155,7 @@ body {
 .contact-info ul li {
   padding: .3em; }
 
-/*nav*/
+/*Nav*/
 .navbar {
   background-color: #e5dfd9; }
 
@@ -152,8 +178,7 @@ body {
   height: 1300px;
   width: 900px;
   overflow: hidden;
-  border-radius: 6px;
-  cursor: pointer; }
+  border-radius: 6px; }
 
 .contenedor figure img {
   width: 100%;
@@ -174,7 +199,7 @@ body {
   opacity: 1;
   visibility: visible; }
 
-.contenedor figure.capa h3 {
+.contenedor figure .capa h3 {
   margin-top: 70px;
   margin-bottom: 15px; }
 
@@ -205,6 +230,16 @@ body {
 
 .camisas {
   text-align: center; }
+
+@media (min-width: 1000px) {
+  .contenedor-principal {
+    display: flex;
+    width: 100%;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: 250px;
+    margin-right: 250px; } }
 
 /*Espaciado entre cards*/
 .cardSpace, .cardSpace2 {
