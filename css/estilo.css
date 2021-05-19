@@ -93,7 +93,7 @@ body {
   margin: 0 0 1rem 0; }
 
 .contact-info {
-  background-image: url(/assets/img/background-contacto.jpg); }
+  background: #e5dfd97e; }
 
 .contact-info ul {
   list-style: none;
